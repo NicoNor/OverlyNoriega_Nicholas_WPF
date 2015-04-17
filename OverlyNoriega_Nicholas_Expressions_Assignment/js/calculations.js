@@ -18,3 +18,9 @@ velocity *= velocity;
 
 
 var KE = (mass * velocity) /2;
+// m= 2, v=4; KE = 1/2mv^2 = 1/2 2*4^2, v^2 = 4
+
+var result = String("Kinetic Energy is " + KE);
+
+alert(result);
+console.log(result);
