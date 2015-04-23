@@ -45,5 +45,41 @@ if(bowlOfFruit[0]==="pear"){
     totalNumPears++; //totalNumPears = totalNumPears = totalNumPears + 1
 } else {
     console.log("This fruit is not a pear!")
+
+}if(bowlOfFruit[1]==="pear"){
+    //This code will run if true
+    //Add 1 to the total numbers of pears
+    console.log("This item is a pear!");
+    totalNumPears++; //totalNumPears = totalNumPears = totalNumPears + 1
+} else {
+    console.log("This fruit is not a pear!")
 }
+
+if(bowlOfFruit[2]==="pear"){
+    //This code will run if true
+    //Add 1 to the total numbers of pears
+    console.log("This item is a pear!");
+    totalNumPears++; //totalNumPears = totalNumPears = totalNumPears + 1
+} else {
+    console.log("This fruit is not a pear!")
+}
+
+if(bowlOfFruit[3]==="pear"){
+    //This code will run if true
+    //Add 1 to the total numbers of pears
+    console.log("This item is a pear!");
+    totalNumPears++; //totalNumPears = totalNumPears = totalNumPears + 1
+} else {
+    console.log("This fruit is not a pear!")
+}
+
+console.log("There are "+totalNumPears+" pear(s) in the fruit bowl.");
+
+
+//Create another variable to track pears
+var pearNumber = 0;
+
+//Create a loop for repetitive code.
+
+//  For Loop Structure
 
