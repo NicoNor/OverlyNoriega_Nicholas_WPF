@@ -11,7 +11,7 @@ GoTO Week #3
 //Array - variable that holds multiple variables
 //Index # of an Array always starts with 0!
 
-var bowlOfFruit = ["apple", "banana","pear","peace"];
+var bowlOfFruit = ["apple", "banana","pear","peace","banana","kiwi","pear","strawberry","pear","pear"];
 
 //See whole array
 console.log(bowlOfFruit);
@@ -82,4 +82,18 @@ var pearNumber = 0;
 //Create a loop for repetitive code.
 
 //  For Loop Structure
+//for(initializing a counting variable; condition to test; increment of change) {code to run for each time we loop}
 
+for(var i =0; i<bowlOfFruit.length; i++){
+    console.log("Inside the loop, i ="+i);
+    console.log(bowlOfFruit[i]);
+    //Test if the array item is pear
+    if(bowlOfFruit[i]==="pear"){
+        console.log("Found a pear!");
+        pearNumber++;
+    }else{
+            console.log("Fruit is not a pear");
+    }
+}
+
+console.log("The total number of pears in the bowl is "+pearNumber);
