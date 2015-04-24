@@ -1,4 +1,4 @@
-
+//Nicholas Noriega Overly 4/23/15 Assignment: Conditionals
 
 //Formula: F = G m 1 m 2 / r 2
 
@@ -17,8 +17,17 @@ userInput = prompt("Please Enter Distance(r).");
 //Checking that input is a number, re-prompting suer for a number, and validating on console.
 isNaN(userInput)?userInput=prompt("Error: The Value You Have Entered Is Not A Number.\nPlease Enter A New Value."):r=userInput;
 
-//Formula is resolved.
+//Formula Solution. (Tested via calculator. Both JS and Calculator gave same answer when: 
 f = ((6.67384* pow(10,-11))*m1*m2) /pow(r,2);
 
-
-
+//Conditional statements tell us what happens when F(force) =  a positive, negative, or is equal to zero.
+if(f < 0 ){
+    console.log("Anti-Matter.");
+}
+else if(f > 0){
+    console.log("Attraction.");
+}
+else if(f === 0 && !(f<0) && !(f>0)){
+    console.log("Not In Gravitational Field.");
+}
+// negative = anti-matter, positive = attraction, zero = not in gravitational field
