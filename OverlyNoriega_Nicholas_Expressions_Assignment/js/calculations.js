@@ -20,7 +20,7 @@ velocity *= velocity;
 var KE = (mass * velocity) /2;
 // m= 2, v=4; KE = 1/2mv^2 = 1/2 2*4^2, 4*4 = 16; 1/2(2*16) = 1/2(32) = 16 (Externally checked in calculator)
 // Answer from js: 16
-var result = String("Kinetic Energy is " + KE);
+var result = String("Kinetic Energy is " + KE + ".");
 
 alert(result);
 console.log(result);
