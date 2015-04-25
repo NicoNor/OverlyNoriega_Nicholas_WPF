@@ -20,7 +20,7 @@ isNaN(userInput)?userInput=prompt("Error: The Value You Have Entered Is Not A Nu
 
 
 userInput = prompt("Please Enter Mass2(m2).");
-//Checking that input is a number, re-prompting user for a number, and validating on console.
+//Checking that input is a number, re-prompting user.
 
 if(userInput === ""){
     //If the user left it blank
