@@ -6,16 +6,31 @@
 var m1, m2, r, f, userInput;
 
 userInput = prompt("Welcome to Newton's Law of Universal Gravitation Calculator. \n\nPlease Enter Mass1(m1).");
-//Checking that input is a number, re-prompting suer for a number, and validating on console.
+//Checking that input is a number, re-prompting user if number was not inputed.
 isNaN(userInput)?userInput=prompt("Error: The Value You Have Entered Is Not A Number.\nPlease Enter A New Value."):m1=userInput;
+if(userInput === ""){
+    //If the user left it blank
+    //reprompt the user using the SAME variable
+    userInput = prompt("Please Do Not Leave Blank. \nPlease Enter Mass1(m1)");
+}
 
 userInput = prompt("Please Enter Mass2(m2).");
 //Checking that input is a number, re-prompting suer for a number, and validating on console.
 isNaN(userInput)?userInput=prompt("Error: The Value You Have Entered Is Not A Number.\nPlease Enter A New Value."):m2=userInput;
+if(userInput === ""){
+    //If the user left it blank
+    //reprompt the user using the SAME variable
+    userInput = prompt("Please Do Not Leave Blank. \nPlease Enter Mass2(m2)");
+}
 
 userInput = prompt("Please Enter Distance(r).");
 //Checking that input is a number, re-prompting suer for a number, and validating on console.
 isNaN(userInput)?userInput=prompt("Error: The Value You Have Entered Is Not A Number.\nPlease Enter A New Value."):r=userInput;
+if(userInput === ""){
+    //If the user left it blank
+    //reprompt the user using the SAME variable
+    userInput = prompt("Please Do Not Leave Blank. \nPlease Enter Distance(r)");
+}
 
 //Formula Solution. (Tested via calculator. Both JS and Calculator gave same answer when: m1(4), m2(4), r(4) = 6.67384e-11
 //The e in the result = Euler's number.
