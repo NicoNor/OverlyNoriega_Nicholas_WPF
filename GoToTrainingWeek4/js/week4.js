@@ -42,3 +42,22 @@ while( x < 6 ){
 
  */
 
+//Prompt the user for max number
+var maxNum = prompt("What is the max number:")
+
+//Validate- directly after the prompt.
+while(maxNum==="" || isNaN(maxNum)){
+    maxNum = prompt("Please do not leave blank and only use numbers.\What is the max value:");
+
+}
+
+//What if I wanted to validate words
+//Ask a yes or no question
+var happy = prompt("Are you happy today?");
+//convert to all lowercase
+happy = happy.toLocaleLowerCase();
+
+// != (is not) || (or) && (and)
+while(happy !="yes" && happy !="no"){
+    happy = prompt("Please only use yes or no.\n Are you happy today?");
+}
