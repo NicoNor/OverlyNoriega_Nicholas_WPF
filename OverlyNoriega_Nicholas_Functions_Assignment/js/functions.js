@@ -27,33 +27,40 @@ var ogPrice=prompt("What is the original price?");
 //Validate- directly after the prompt.
 while(ogPrice==="" || isNaN(ogPrice)) {
     ogPrice = prompt("Please do not leave blank and only use numbers.\nWhat is the original price?");
-
 }
+
+console.log("The original price is " + ogPrice);
 
 //We are now finding the discount %
 var discount=prompt("What is the discount percent?");
+
 
 //Validating
 while(discount==="" || isNaN(discount)){
     discount=prompt("Please do not leave blank and only use numbers.\nWhat is the discount percent?");
 }
 
-
-decimalizr(discount);
+console.log("The discount is " + discount + "%");
 
 
 //Converting user input for "discount" into decimal.
-function decimalizr(percent){
+var decimalizr = function (percent){
     return percent / 100;
 }
 
-calculathor(ogPrice, discount);
+calculathor(ogPrice, decimalizr(discount));
 
 //Calculating the sale price. rate * original price = discount // original price - discount = Sale Price
 function calculathor(price, dis){
-     return (price * dis);
+     return price - (price * dis);
 
 }
 
-console.log(calculathor(ogPrice, decimalizr(discount)));
 
+
+var value = decimalizr(discount);
+
+
+var solution = calculathor(ogPrice, value);
+
+console.log("The item is on sale for a price of: " + solution);
