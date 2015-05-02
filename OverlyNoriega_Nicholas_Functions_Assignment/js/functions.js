@@ -15,27 +15,27 @@ while(question != "yes" && question != "no") {
     //Making all answers lowercase to easily defind users answer.
     question = question.toLocaleLowerCase();
 }
+//If question is no- The alert will loop forever, as the user has no need for the calculator.
      while (question==="no"){
          alert("You do not need Price Finder.");
      }
 
 
-
-//We are now finding the original price.
+//User inputing the original price.
 var ogPrice=prompt("What is the original price?");
 
-//Validate- directly after the prompt.
+//Checking that the user inputed a number. (is not blank or contains letters)
 while(ogPrice==="" || isNaN(ogPrice)) {
     ogPrice = prompt("Please do not leave blank and only use numbers.\nWhat is the original price?");
 }
 
 console.log("The original price is " + ogPrice);
 
-//We are now finding the discount %
+//User inputing the discount %
 var discount=prompt("What is the discount percent?");
 
 
-//Validating
+//Checking that the user inputed a number. (is not blank or contains letters)
 while(discount==="" || isNaN(discount)){
     discount=prompt("Please do not leave blank and only use numbers.\nWhat is the discount percent?");
 }
@@ -55,8 +55,8 @@ function calculathor(price, dis){
      return price - (price * dis);
 
 }
-
-
+//Calcutions verified by inputing 100, 70 as ogPrice, discount. The result both in JS and outside resource(calculator
+// is 30. 
 
 var value = decimalizr(discount);
 
