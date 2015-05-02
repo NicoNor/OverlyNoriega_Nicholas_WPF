@@ -38,23 +38,22 @@ while(discount==="" || isNaN(discount)){
     discount=prompt("Please do not leave blank and only use numbers.\nWhat is the discount percent?");
 }
 
-decimalizr(discount);
 
-calculathor(ogPrice);
+decimalizr(discount);
 
 
 //Converting user input for "discount" into decimal.
 function decimalizr(percent){
-    var discountPercent= percent / 100;
-        console.log(discountPercent);
+    return percent / 100;
 }
 
+calculathor(ogPrice, discount);
 
 //Calculating the sale price. rate * original price = discount // original price - discount = Sale Price
 function calculathor(price, dis){
-    var salePrice= price * dis;
-    console.log(salePrice);
+     return (price * dis);
+
 }
 
-
+console.log(calculathor(ogPrice, decimalizr(discount)));
 
