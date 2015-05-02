@@ -8,6 +8,7 @@
 
 // Prompting user to see if the calculator is useful to him.
 var question=prompt("Welcome to Price Finder.\n Do you need help finding a price AFTER discount?");
+question = question.toLocaleLowerCase();
 
 //Making it so only yes and no can be used.
 while(question != "yes" && question != "no") {
@@ -48,7 +49,6 @@ var decimalizr = function (percent){
     return percent / 100;
 }
 
-calculathor(ogPrice, decimalizr(discount));
 
 //Calculating the sale price. rate * original price = discount // original price - discount = Sale Price
 function calculathor(price, dis){
@@ -56,7 +56,7 @@ function calculathor(price, dis){
 
 }
 //Calcutions verified by inputing 100, 70 as ogPrice, discount. The result both in JS and outside resource(calculator
-// is 30. 
+// is 30.
 
 var value = decimalizr(discount);
 
