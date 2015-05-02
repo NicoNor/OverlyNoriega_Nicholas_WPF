@@ -10,13 +10,16 @@
 var question=prompt("Welcome to Price Finder.\n Do you need help finding a price AFTER discount?");
 
 //Making it so only yes and no can be used.
-while(question != "yes" && question != "no"){
-    question=prompt("Please only use yes or no.\n Are you happy today?");
+while(question != "yes" && question != "no") {
+    question = prompt("Please only use yes or no.\n Do you need help finding a price AFTER discount?");
     //Making all answers lowercase to easily defind users answer.
-    question=question.toLocaleLowerCase()
-    if(question==="no")
-    alert("You do not need Price Finder.");
+    question = question.toLocaleLowerCase();
 }
+     while (question==="no"){
+         alert("You do not need Price Finder.");
+     }
+
+
 
 //We are now finding the original price.
 var ogPrice=prompt("What is the original price?");
@@ -37,14 +40,15 @@ while(discount==="" || isNaN(discount)){
 
 decimalizr(discount);
 
-calculathor(ogPrice,decimalDiscount);
-//Converting user input for "discount" into decimal.
+calculathor(ogPrice);
 
+
+//Converting user input for "discount" into decimal.
 function decimalizr(percent){
     var discountPercent= percent / 100;
         console.log(discountPercent);
-
 }
+
 
 //Calculating the sale price. rate * original price = discount // original price - discount = Sale Price
 function calculathor(price, dis){
