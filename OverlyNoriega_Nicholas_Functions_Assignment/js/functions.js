@@ -24,7 +24,6 @@ var ogPrice=prompt("What is the original price?");
 //Validate- directly after the prompt.
 while(ogPrice==="" || isNaN(ogPrice)) {
     ogPrice = prompt("Please do not leave blank and only use numbers.\nWhat is the original price?");
-    conole.log(ogPrice);
 
 }
 
@@ -38,6 +37,7 @@ while(discount==="" || isNaN(discount)){
 
 decimalizr(discount);
 
+calculathor(ogPrice,decimalDiscount);
 //Converting user input for "discount" into decimal.
 
 function decimalizr(percent){
@@ -45,4 +45,12 @@ function decimalizr(percent){
         console.log(discountPercent);
 
 }
+
+//Calculating the sale price. rate * original price = discount // original price - discount = Sale Price
+function calculathor(price, dis){
+    var salePrice= price * dis;
+    console.log(salePrice);
+}
+
+
 
